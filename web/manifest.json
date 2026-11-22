@@ -1,0 +1,19 @@
+{
+  "name": "Minhas Tarefas",
+  "short_name": "Minhas Tarefas",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#FFF0F7",
+  "theme_color": "#D50062",
+  "description": "Agendamento e gestão de tarefas pessoais.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-logo.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

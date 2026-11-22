@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "712252429574",
+    "firebase_url": "https://minhas-tarefas-a022e-default-rtdb.firebaseio.com",
+    "project_id": "minhas-tarefas-a022e",
+    "storage_bucket": "minhas-tarefas-a022e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712252429574:android:eeb4026b4c05446a70fa87",
+        "android_client_info": {
+          "package_name": "br.com.estudo.minhas_tarefas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHcPr3yzpDkiTiIOCq1OOVwGG3ZD2DKYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

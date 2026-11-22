@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Gerenciamento de tarefas pessoais.">
+
+  
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Minhas Tarefas">
+  <link rel="apple-touch-icon" href="icons/Icon-logo.png">
+
+  
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Minhas Tarefas</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#D50062">
+  <style>
+    body { margin: 0; background: #fff0f7; }
+    #app-loading { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; background: #fff0f7; color: #740031; font: 16px Arial, sans-serif; }
+    #app-loading img { width: min(64vw, 260px); border-radius: 32px; }
+    .loading-ring { width: 26px; height: 26px; border: 3px solid #f4b4d1; border-top-color: #d50062; border-radius: 50%; animation: loading 1s linear infinite; }
+    @keyframes loading { to { transform: rotate(360deg); } }
+    @media (prefers-color-scheme: dark) { body, #app-loading { background: #190f16; color: #ffd9e9; } }
+    @media (prefers-reduced-motion: reduce) { .loading-ring { animation: none; } }
+  </style>
+</head>
+<body>
+  <div id="app-loading" role="status" aria-label="Abrindo Minhas Tarefas">
+    <img src="icons/Icon-logo.png" alt="Minhas Tarefas - Agendamento e Gestão de Tarefas">
+    <span class="loading-ring" aria-hidden="true"></span>
+    <span>Preparando suas tarefas...</span>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      document.getElementById('app-loading')?.remove();
+    }, { once: true });
+  </script>
+  
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
