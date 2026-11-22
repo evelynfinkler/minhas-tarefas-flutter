@@ -1,4 +1,0 @@
-As imagens desta pasta são capturas dos widgets Flutter renderizados em testes automatizados.
-O usuário e as tarefas exibidos são dados locais de teste.
-A integração com uma conta Firebase real ainda depende da configuração descrita no README.
-Para gerar novamente: flutter test test/capturas_test.dart
